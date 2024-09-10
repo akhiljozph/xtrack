@@ -1,0 +1,28 @@
+{
+  "name": "ex-tracker-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:local":"ts-node ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:akhiljozph/ex-tracker-services.git"
+  },
+  "keywords": [
+    "tsc",
+    "node",
+    "koa"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.15.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.15.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
