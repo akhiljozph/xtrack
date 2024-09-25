@@ -18,7 +18,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.15.3"
+    "koa": "^2.15.3",
+    "mongoose": "^8.6.3"
   },
   "devDependencies": {
     "@types/koa": "^2.15.0",
