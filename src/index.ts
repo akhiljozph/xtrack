@@ -14,7 +14,7 @@ app.use(async (ctx) => {
 
 const connectDB = async () => {
     try {
-        const conn = await mongoose.connect(DB_URI);
+        const connect = await mongoose.connect(DB_URI);
         logger.info(`Successfully Connected to MongoDB`);
     } catch (error) {
         logger.error(error);
