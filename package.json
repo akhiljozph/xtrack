@@ -18,8 +18,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "inversify": "^6.0.2",
     "koa": "^2.15.3",
-    "mongoose": "^8.6.3"
+    "mongoose": "^8.6.3",
+    "reflect-metadata": "^0.2.2"
   },
   "devDependencies": {
     "@types/koa": "^2.15.0",
