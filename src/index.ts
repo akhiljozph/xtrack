@@ -1,25 +1,19 @@
-import 'dotenv/config';
-import Koa from "koa";
-import bodyParser from "koa-bodyparser";
+import koa from "koa";
+import parser from "koa-bodyparser";
+import cors from "@koa/cors";
 
-import logger from "./common/logger/logger";
-import router from "./routes";
+const app = new koa();
+
+app.use(cors());
+app.use(parser());
 
 const PORT = process.env.PORT || 3000;
 const DB_URI = process.env.DB_URI || "";
 
-const app = new Koa();
-
-app.use(bodyParser());
-app.use(router.routes());
-app.use(async (ctx) => {
-    ctx.body = `
-        <section style='height:calc(100vh - 16px);display:flex;align-items:center;justify-content:center;'>
-            <label style='font-family:congenial;font-size:64px;font-weight:700;'>Welcome to Ex Tracker!</label>
-        </section>
-    `;
+app.use(async ctx => {
+    ctx.body = "Hellow World";
 });
 
 app.listen(PORT, () => {
-    logger.info(`Ex-tracker is running on port ${PORT}`)
+    console.log(`Ex-tracker is running on port ${PORT}`);
 });
