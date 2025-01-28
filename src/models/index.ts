@@ -5,6 +5,6 @@ const settings = {
     dialect: "postgres" as Dialect
 };
 
-const sequelize = new Sequelize("DATABASE", "USERNAME", "PASSWORD", settings);
+const sequelize = new Sequelize("ex-tracker", "postgres", "admin", settings);
 
 export default sequelize;
