@@ -4,6 +4,7 @@ import parser from "koa-bodyparser";
 
 import "./config/env.config";
 import dbClient from "./config/db.config";
+import router from "./routes";
 
 const PORT = process.env.PORT;
 
@@ -12,9 +13,7 @@ const app = new koa();
 app.use(cors());
 app.use(parser());
 
-app.use(async ctx => {
-    ctx.body = "Hello World";
-});
+app.use(router.routes()).use(router.allowedMethods());
 
 dbClient.connect()
     .then(() => {

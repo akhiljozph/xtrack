@@ -12,6 +12,7 @@
     "@types/koa": "^2.15.0",
     "@types/koa__cors": "^5.0.0",
     "@types/koa-bodyparser": "^4.3.12",
+    "@types/koa-router": "^7.4.8",
     "@types/node": "^22.12.0",
     "@types/pg": "^8.11.11",
     "cross-env": "^7.0.3",
