@@ -6,7 +6,7 @@ const RDBMS_DATABASE = process.env.RDBMS_DATABASE || 'ex-tracker';
 const RDBMS_PASSWORD = process.env.RDBMS_PASSWORD || 'admin';
 const RDBMS_PORT = process.env.RDBMS_PORT || 5432;
 
-const sequelizeDBConfig = new Sequelize(RDBMS_DATABASE, RDBMS_USERNAME, RDBMS_PASSWORD, {
+export const sequelizeDBConfig = new Sequelize(RDBMS_DATABASE, RDBMS_USERNAME, RDBMS_PASSWORD, {
     host: RDBMS_HOSTNAME,
     dialect: 'postgres',
     port: Number(RDBMS_PORT),
