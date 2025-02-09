@@ -1,9 +1,9 @@
 import { Sequelize } from "sequelize";
 
-const RDBMS_USERNAME = process.env.RDBMS_USERNAME || '';
-const RDBMS_HOSTNAME = process.env.RDBMS_HOSTNAME || '';
-const RDBMS_DATABASE = process.env.RDBMS_DATABASE || '';
-const RDBMS_PASSWORD = process.env.RDBMS_PASSWORD || '';
+const RDBMS_USERNAME = process.env.RDBMS_USERNAME || 'postgres';
+const RDBMS_HOSTNAME = process.env.RDBMS_HOSTNAME || 'localhost';
+const RDBMS_DATABASE = process.env.RDBMS_DATABASE || 'ex-tracker';
+const RDBMS_PASSWORD = process.env.RDBMS_PASSWORD || 'admin';
 const RDBMS_PORT = process.env.RDBMS_PORT || 5432;
 
 const sequelizeDBConfig = new Sequelize(RDBMS_DATABASE, RDBMS_USERNAME, RDBMS_PASSWORD, {
