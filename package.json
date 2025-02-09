@@ -29,7 +29,12 @@
     "start:development": "cross-env NODE_ENV=development nodemon ./src/index.ts",
     "start:qa": "cross-env NODE_ENV=qa nodemon ./src/index.ts",
     "start:stage": "cross-env NODE_ENV=stage nodemon ./src/index.ts",
-    "start:production": "cross-env NODE_ENV=production nodemon ./src/index.ts"
+    "start:production": "cross-env NODE_ENV=production nodemon ./src/index.ts",
+    "add:db:migration": "",
+    "xecute:db:migration": "",
+    "add:db:seed": "",
+    "xecute:db:seed": "",
+    "xecute:db:seeds:all": ""
   },
   "author": "",
   "license": "ISC"
