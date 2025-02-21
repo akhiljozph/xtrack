@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 
 import { sequelizeDBConfig } from "../config/sequelize.db.config";
 
-const Users = sequelizeDBConfig.define('Users', {
+const Users = sequelizeDBConfig.define('User', {
     id: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,

@@ -3,7 +3,16 @@ import Router from "koa-router";
 const authRoutes = new Router();
 
 authRoutes.post('/registration', async(ctx) => {
-    ctx.body = { message: "Hello from authRoutes."}
+
+    const userData: any = ctx.request.body;
+
+    if (userData) {
+        ctx.body = { message: "Registrations successfully completed!"}
+        ctx.status = 201;
+    }
+
+    ctx.body = { message: "Registrations not completed!"}
+    ctx.status = 500;
 });
 
 authRoutes.post('/create/password', async(ctx) => {
