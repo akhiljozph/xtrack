@@ -19,6 +19,7 @@
     "@types/pg": "^8.11.11",
     "cross-env": "^7.0.3",
     "nodemon": "^3.1.9",
+    "sequelize-cli": "^6.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
@@ -32,11 +33,11 @@
     "start:qa": "cross-env NODE_ENV=qa nodemon ./src/index.ts",
     "start:stage": "cross-env NODE_ENV=stage nodemon ./src/index.ts",
     "start:production": "cross-env NODE_ENV=production nodemon ./src/index.ts",
-    "add:db:migration": "",
-    "xecute:db:migration": "",
+    "add:db:migration": "cross-env NODE_ENV=development ./node_modules/sequelize-cli/lib/sequelize migration:generate --name",
+    "execute:db:migration": "cross-env NODE_ENV=development ./node_modules/sequelize-cli/lib/sequelize db:migrate",
     "add:db:seed": "",
-    "xecute:db:seed": "",
-    "xecute:db:seeds:all": ""
+    "execute:db:seed": "",
+    "execute:db:seeds:all": ""
   },
   "author": "",
   "license": "ISC"

@@ -5,5 +5,6 @@
     "database": "ex-tracker",
     "host": "localhost",
     "dialect": "postgres"
-  }
+  },
+  "dialect": "postgres"
 }
