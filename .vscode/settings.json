@@ -18,5 +18,5 @@
         "titleBar.inactiveBackground": "#ff1ac599",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#ff1ac5"
+    "workbench.colorTheme": "Kimbie Dark",
 }

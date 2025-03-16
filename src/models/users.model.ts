@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 
 import { sequelizeDBConfig } from "../config/sequelize.db.config";
 
-const Users = sequelizeDBConfig.define('Users', {
+const Users = sequelizeDBConfig.define('users', {
     id: {
         type: DataTypes.UUID,
         defaultValue: DataTypes.UUIDV4,
@@ -38,7 +38,7 @@ const Users = sequelizeDBConfig.define('Users', {
     biological_sex: {
         type: DataTypes.ENUM('FEMALE', 'MALE', 'OTHERS'),
         allowNull: false,
-        defaultValue: 'others',
+        defaultValue: 'OTHERS',
     },
     account_type: {
         type: DataTypes.ENUM('GLOBAL_ADMIN', 'GROUP_ADMIN', 'GROUP_MEMBER'),
