@@ -1,9 +1,9 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Welcome } from "../pages/welcome/welcome";
 
 export function meta({ }: Route.MetaArgs) {
   return [
-    { title: "Xtrack" },
+    { title: "eXtrack" },
     { name: "description", content: "Smart expense tracker by AK with ❤️!" },
   ];
 }
