@@ -1,6 +1,6 @@
-# Xtrack
+# Kanakk | kanakkupusthakam 
 
-**Expense Tracker Application**
+**The smart manger for you daily expenses**
 
 ## Tech Stack
 
