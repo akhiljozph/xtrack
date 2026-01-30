@@ -1,13 +1,27 @@
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import SignIn from './pages/sign-in/SignIn'
+import { routes } from './routes';
+
+import './App.css';
 
 function App() {
 
   return (
-    <div className='kanakk-lander'>
-      <SignIn />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {routes?.map((route) => {
+          const Element = route.element;
+
+          return (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<Element />}
+            />
+          )
+        })}
+      </Routes>
+    </BrowserRouter>
   )
 }
 
